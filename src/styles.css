@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Style
+ * URL: https://www.pagecloud.com/blog/best-google-fonts-pairings#95dfa02e-52b9-4663-cdc2-faaec1ad8a4f
+ * Font pairing style: Creative, Slab + Serif
+ * Title font: https://fonts.google.com/specimen/Ultra
+ * Paragraph font: https://fonts.google.com/specimen/Slabo+27px
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+@layer base {
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ultra', serif;
+  }
+  p {
+    font-family: 'Slabo 27px', serif;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
